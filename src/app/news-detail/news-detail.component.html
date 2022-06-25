@@ -1,0 +1,44 @@
+<div class="modal-header">
+  <h4 class="modal-title">News Details</h4>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="closeModal()"
+  ></button>
+</div>
+<div class="modal-body">
+    <div class="mb-3 row">
+      <label for="exampleFormControlInput1" class="col-sm-2 col-form-label fw-bold">Title</label>
+      <div class="col-sm-10">{{data?.title}}</div>
+    </div>
+    <div class="mb-3 row">
+      <label for="exampleFormControlInput1" class="col-sm-2 col-form-label fw-bold">Description</label>
+      <div class="col-sm-10">{{data?.description}}</div>
+    </div>
+    <div class="mb-3 row">
+      <label for="exampleFormControlInput1" class="col-sm-2 col-form-label fw-bold">Content</label>
+      <div class="col-sm-10">{{data?.content}}</div>
+    </div>
+    <div class="mb-3 row">
+      <label for="exampleFormControlInput1" class="col-sm-2 col-form-label fw-bold">Author</label>
+      <div class="col-sm-10">{{data?.author}}</div>
+    </div>
+    <div class="mb-3 row">
+      <label for="exampleFormControlInput1" class="col-sm-2 col-form-label fw-bold">PublishedAt</label>
+      <div class="col-sm-10">{{data?.publishedAt}}</div>
+    </div>
+    <div class="mb-3 row">
+      <label for="exampleFormControlInput1" class="col-sm-2 col-form-label fw-bold">Image</label>
+      <div class="col-sm-3"><img class="img-thumbnail" src="https://s.yimg.com/os/creatr-images/2020-01/01f6e940-3251-11ea-bede-f1ad3d3020b3"></div>
+    </div>
+    <div class="mb-3 row">
+      <label for="exampleFormControlInput1" class="col-sm-2 col-form-label fw-bold">Read More...</label>
+      <div class="col-sm-10">{{data?.url}}</div>
+    </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="closeModal()">
+    Close
+  </button>
+</div>
